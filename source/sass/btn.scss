@@ -1,0 +1,38 @@
+.btn {
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 40px;
+  padding: 15px 42px;
+  background-color: #E41D22;
+
+  justify-content: center;
+  align-items: center;
+
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 46px;
+  font-weight: bold;
+  text-align: center;
+
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media (max-width: 1530px) {
+    padding: 15px 22px;
+  }
+
+  @media (max-width: 1145px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 874px) {
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    box-shadow: 0px 7px 15px -8px #000000;
+  }
+}

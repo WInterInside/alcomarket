@@ -36,7 +36,6 @@
 
   @media (max-width: 459px) {
     flex-direction: column;
-    margin-top: 15px;
   }
 }
 
@@ -56,6 +55,7 @@
   @media (max-width: 874px) {
     width: 100%;
     justify-content: center;
+    margin-bottom: 25px;
   }
 }
 
@@ -132,6 +132,10 @@
 
   @media (max-width: 1367px) {
     margin-left: 0;
+  }
+
+  @media (max-width: 459px) {
+    margin-bottom: 20px;
   }
 }
 

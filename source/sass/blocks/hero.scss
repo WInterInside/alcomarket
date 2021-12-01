@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: row;
 
@@ -30,9 +31,34 @@
   }
   &--fat {
     width: 32px;
-    margin-right: 200px;
     @media (max-width: 1150px) {
       width: 10px;
     }
   }
+}
+
+.hero__content {
+  width: 50%;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+.hero__caption {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.hero__caption span {
+  color: #E41D22;
+}
+
+.hero__img {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 500px;
+  height: 800px;
 }

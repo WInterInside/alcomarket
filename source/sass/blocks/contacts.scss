@@ -66,7 +66,6 @@
 
   @media (max-width: 1367px) {
     margin-right: 0;
-    margin-top: 10px;
   }
 
   @media (max-width: 1150px) {
@@ -109,6 +108,10 @@
 .contacts__icon:hover {
   border: 1px solid #E41D22;
   transition: 0.5s;
+
+  @media (max-width: 459px) {
+    border: none;
+  }
 }
 
 .contacts__icon svg,

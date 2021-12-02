@@ -9,6 +9,7 @@
   margin: 0 auto;
   max-width: 1920px;
   padding: 0 55px;
+  padding-bottom: 60px;
 
   @media (max-width: 1150px) {
     padding: 0 25px;
@@ -99,11 +100,11 @@
   }
 
   @media (max-width: 459px) {
-    margin-top: 370px;
+    margin-top: 400px;
   }
 
   @media (max-width: 359px) {
-    margin-top: 450px;
+    margin-top: 430px;
   }
 }
 

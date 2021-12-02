@@ -1,0 +1,27 @@
+.section-caption {
+  display: inline-block;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+
+  @media (max-width: 979px) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.section-caption span {
+  color: #E41D22;
+}
+
+.__center {
+  text-align: center;
+}

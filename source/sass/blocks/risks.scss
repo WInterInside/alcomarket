@@ -1,0 +1,145 @@
+.risks {
+  margin-top: 50px;
+}
+
+.risks__content {
+  min-height: 1000px;
+  background-image: url("../img/risks-guy.png");
+  background-position: top 50px center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1144px) {
+    background-image: none;
+    min-height: auto;
+  }
+}
+
+.risks__list {
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  // width: 1220px;
+  height: 900px;
+
+  @media (max-width: 1144px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  @media (max-width: 935px) {
+    width: 100%;
+  }
+}
+
+.risks__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  max-width: 340px;
+  min-height: 370px;
+  padding-top: 229px;
+
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1265px) {
+    min-height: 350px;
+  }
+
+  @media (max-width: 1144px) {
+    position: unset;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 935px) {
+    max-width: none;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 100px;
+    min-height: 100px;
+    background-position: left;
+    background-size: 100px 90px;
+  }
+
+  &--fines {
+    top: 0;
+    left: -50px;
+    background-image: url("../img/fines.png");
+  }
+
+  &--b-list{
+    top: 0;
+    right: -40px;
+    background-image: url("../img/b-list.png");
+  }
+
+  &--withdrawal{
+    bottom: 0;
+    left: 150px;
+    background-image: url("../img/withdrawal.png");
+
+  }
+
+  &--expenses{
+    bottom: 0;
+    right: 150px;
+    background-image: url("../img/expenses.png");
+  }
+}
+
+.risks__caption {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+  padding-top: 20px;
+
+  @media (max-width: 1265px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 935px) {
+    padding-top: 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.risks__description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (max-width: 1265px) {
+    width: 60%;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  @media (max-width: 1144px) {
+    width: 100%;
+  }
+
+  @media (max-width: 935px) {
+    padding: 0 20px;
+  }
+
+  &--fines {
+    padding: 0 20px;
+  }
+}
+
+.risks__description span {
+  color: #E41D22;
+}

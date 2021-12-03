@@ -75,6 +75,13 @@
   width: 100%;
 }
 
+.btn--faq {
+  width: 100%;
+  @media (max-width: 1200px) {
+    margin: 0;
+  }
+}
+
 button {
   border: none;
 }

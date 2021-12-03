@@ -1,3 +1,7 @@
+.faq {
+  margin-bottom: 80px;
+}
+
 .faq__accordion {
   display: flex;
   width: 70%;
@@ -5,16 +9,23 @@
   align-items: flex-start;
   text-align: left;
   padding: 20px 20px;
-  background-color: #ffffff;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .faq__accordion-item {
   margin-bottom: 50px;
+
+  @media (max-width: 1300px) {
+    margin-bottom: 35px;
+  }
 }
 
 .faq__accordion-item-header {
   display: flex;
-  width:70%;
+  width: 70%;
   align-items: center;
   position: relative;
   padding-right: 50px;
@@ -25,6 +36,15 @@
   cursor: pointer;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (max-width: 799px) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .faq__accordion-item-content {
@@ -36,11 +56,27 @@
   border-left: 2px dotted #313131;
 }
 
+.faq__accordion-item-content p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  @media (max-width: 1200px) {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 .faq__accordion-item.show .faq__accordion-item-content {
   padding: 1px 50px;
   visibility: visible;
   height: auto;
   opacity: 1;
+
+  @media (max-width: 1300px) {
+    padding: 1px 15px;
+    padding-right: 5px;
+  }
 }
 
 .faq__accordion-item.show .faq__accordion-item-header {
@@ -116,11 +152,79 @@
 
 .faq__content {
   display: flex;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.faq__contacts {
+  padding-right: 100px;
+  background-image: url("../img/faq-bg.png");
+  background-position: top 70px right;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    padding-right: 0;
+    background-image: none  ;
+  }
 }
 
 .faq__contacts .contacts {
   flex-direction: column;
+  width: 410px;
+  margin-top: 50px;
+  padding: 60px 55px;
   background-color: #ffffff;
-  padding: 60px;
   border-radius: 40px;
+
+  @media (max-width: 1300px) {
+    width: 350px;
+    padding: 30px 25px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.faq__contacts svg {
+  fill: #E41D22;
+}
+
+.faq .contacts__wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 25px;
+  }
+}
+
+.faq .contacts__column {
+  @media (max-width: 1200px) {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  @media (max-width: 940px) {
+    width: 50%;
+  }
+
+  @media (max-width: 799px) {
+    justify-content: center;
+    width: 100%;
+  }
 }

@@ -56,16 +56,14 @@
   width: 75%;
   margin: 0 auto;
   padding: 10px 30px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  background-color: #ffffff;
+  margin-top: 40px;
   color: #2d3a4d;
 
   @media (max-width: 714px) {
     width: 100%;
     padding: 10px 0;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   &--modal {

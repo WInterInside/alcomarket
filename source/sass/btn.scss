@@ -53,3 +53,28 @@
     margin-bottom: 35px;
   }
 }
+
+.btn--submit {
+  max-width: 421px;
+  margin: 0;
+  margin-left: 10px;
+
+  @media (max-width: 1217px) {
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 22px;
+  }
+
+  @media (max-width: 340px) {
+    padding: 10px 10px;
+  }
+}
+
+.btn--modal {
+  width: 100%;
+}
+
+button {
+  border: none;
+}

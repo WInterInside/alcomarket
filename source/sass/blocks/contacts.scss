@@ -16,6 +16,10 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+
+  &--top {
+    margin-bottom: 15px;
+  }
 }
 
 .contacts__group {
@@ -39,6 +43,13 @@
   }
 }
 
+.contacts__group--footer {
+  @media (max-width: 1150px) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
 .contacts__location {
   display: flex;
   margin-right: auto;
@@ -56,6 +67,12 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 25px;
+  }
+}
+
+.contacts__location--footer {
+  @media (max-width: 1210px) {
+    width: unset;
   }
 }
 
@@ -77,6 +94,12 @@
   }
 
   &--faq {
+    margin-left: 0;
+  }
+}
+
+.contacts__numbers--footer {
+  @media (max-width: 1150px) {
     margin-left: 0;
   }
 }

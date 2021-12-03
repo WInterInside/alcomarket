@@ -48,6 +48,14 @@
     flex-direction: column;
     margin: 0;
   }
+
+  @media (max-width: 900px) {
+    width: 45%;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 }
 
 .contacts__location {
@@ -74,6 +82,10 @@
   @media (max-width: 1210px) {
     width: unset;
   }
+
+  @media (max-width: 900px) {
+    margin-top: 30px;
+  }
 }
 
 .contacts__numbers {
@@ -95,6 +107,18 @@
 
   &--faq {
     margin-left: 0;
+  }
+
+  &--footer  {
+    padding-right: 90px;
+    margin-right: 0;
+    border-right: 1px dashed rgba(49, 49, 49, 0.5);
+
+    @media (max-width: 1562px) {
+      padding-right: 0;
+      border: none;
+    }
+
   }
 }
 
@@ -192,6 +216,12 @@
   @media (max-width: 459px) {
     margin-bottom: 20px;
   }
+
+  &--footer {
+    @media (max-width: 550px) {
+      margin-top: 30px;
+    }
+  }
 }
 
 .contacts__link {
@@ -214,6 +244,7 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: bold;
+
     @media (max-width: 874px) {
       font-size: 16px;
     }

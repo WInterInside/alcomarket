@@ -1,4 +1,5 @@
 .home--link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,11 +10,21 @@
   height: 25px;
   border-radius: 20px;
 
-  color: #ffffff;
-
   background: linear-gradient(180deg, #E41D22 0%, #960d12 100%);
   border: 1px solid #E41D22;
   box-shadow: inset 0px 6px 13px #E41D22;
+
+  &::before {
+    @include pseudo;
+    top: 7px;
+    left: 14px;
+
+    border: solid #ffffff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+  }
 
   &:hover {
     transition: 0.5s;
